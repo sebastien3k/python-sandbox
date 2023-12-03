@@ -17,6 +17,7 @@ prompt = f"Today's Temperature {temperature_fahrenheit} degrees, weather conditi
 
 
 print("COMMAND LINE ASSISTANT")
+print('\'q\' or \'quit\' to exit')
 print('\'w\' or \'weather\' for weather')
 print(prompt)
 
