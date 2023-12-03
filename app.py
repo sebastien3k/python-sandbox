@@ -2,6 +2,7 @@ import requests
 import datetime
 
 # LIVE WEATHER API SETUP
+api_key = 'place_api_key_here'
 city = 'London'
 country = 'United Kingdom'
 url = f'http://api.weatherapi.com/v1/current.json?key={api_key}&q={city},{country}'
@@ -24,7 +25,7 @@ while True:
   if user_input.lower() == '':
     pass
   elif user_input.lower() in ['q', 'quit']:
+    print("Bye!")
     break
   else:
-    print("You've inputted: " + (user_input))
-  # print(f"That's dope {user_input}, anything else?")
+    print(f"You've inputted: {user_input}, anything else?")
