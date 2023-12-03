@@ -2,7 +2,7 @@ import requests
 import datetime
 
 # LIVE WEATHER API SETUP
-api_key = '65b4908eac3843a7bc964029231311'
+api_key = 'place_api_key_here'
 city = 'London'
 country = 'United Kingdom'
 url = f'http://api.weatherapi.com/v1/current.json?key={api_key}&q={city},{country}'
