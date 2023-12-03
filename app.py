@@ -1,4 +1,8 @@
-print("Hello World")
+import requests
+import datetime
+
+print("COMMAND LINE ASSISTANT")
+print('\'w\' or \'weather\' for weather')
 
 while True:
   user_input = input('> ')
