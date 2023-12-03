@@ -2,7 +2,7 @@ import requests
 import datetime
 
 # LIVE WEATHER API SETUP
-api_key = 'place_api_key_here'
+api_key = '65b4908eac3843a7bc964029231311'
 city = 'London'
 country = 'United Kingdom'
 url = f'http://api.weatherapi.com/v1/current.json?key={api_key}&q={city},{country}'
@@ -12,8 +12,11 @@ temperature_fahrenheit = str(data['current']['temp_f'])
 weather_condition_text = data['current']['condition']['text']
 api_response_string = data
 current_time = datetime.datetime.now()
-prompt = f"Today's Temperature {temperature_fahrenheit} degrees, weather condition of {weather_condition_text} and the current date and time {current_time} in London, UK."
-
+prompt = (
+    f"Today's Temperature {temperature_fahrenheit} degrees, "
+    f"weather condition of {weather_condition_text} and the current "
+    f"date and time {current_time} in London, UK."
+)
 
 
 print("COMMAND LINE ASSISTANT")
